@@ -96,7 +96,7 @@ A skill is just a folder Claude Code watches. Put Trellis in your skills directo
 
 ```bash
 # personal — available in every project (recommended)
-git clone https://github.com/<your-username>/trellis ~/.claude/skills/trellis
+git clone https://github.com/R4Wraith/trellis ~/.claude/skills/trellis
 ```
 
 <details>
@@ -107,7 +107,7 @@ git clone https://github.com/<your-username>/trellis ~/.claude/skills/trellis
 mkdir -p ~/.claude/skills && unzip trellis.zip -d ~/.claude/skills/
 
 # project-scoped (committed with one repo)
-git clone https://github.com/<your-username>/trellis .claude/skills/trellis
+git clone https://github.com/R4Wraith/trellis .claude/skills/trellis
 ```
 Make sure `SKILL.md` ends up directly at `~/.claude/skills/trellis/SKILL.md` (not nested an extra level). If you just created `~/.claude/skills/` for the first time, restart Claude Code so it watches the new directory.
 </details>
@@ -251,4 +251,4 @@ Standing on good ideas from others: **Andrej Karpathy** (the coding-agent failur
 
 ## License
 
-[MIT](LICENSE) — replace the copyright holder before you publish.
+[MIT](LICENSE)
