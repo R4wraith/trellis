@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -uo pipefail
+echo "[pre-push] tests + check"
+bash .claude/scripts/run-tests.sh || { echo "tests failed — push blocked"; exit 1; }
+bash .claude/scripts/check.sh      || { echo "check failed — push blocked"; exit 1; }
+echo "[pre-push] OK"
